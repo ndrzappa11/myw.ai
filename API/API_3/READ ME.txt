@@ -1,0 +1,24 @@
+API 3    emissione ordine su yolo
+
+
+DATI INPUT
+
+ int id_macchinario;
+ Date data_inizio;
+ Date data_fine;
+ Double massimale;
+ String selezione;
+ double premio;
+ int id_polizza;
+ String durata;
+ String pag; 
+
+METODI
+
+Getter e Setter di ogni variabile
+
+setOgg(API_1 ogg) -> viene instanziato un oggetto API_1 per poter richiedere nei metodi successivi i dati del macchinario
+
+setData_fine() -> viene generata la fine data della polizza a seconda delle scelte effettuate nell'api_1
+
+generaPolizza(API_1 api1, String pag, int offerta, API_3 api3, int idU) -> viene inserita nel DB la nuova polizza appena creata, collegata sia al macchinario che all'utente

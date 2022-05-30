@@ -1,0 +1,28 @@
+API 4     emissione contratto
+
+DATI INPUT 
+
+ int id_macchinario;
+ Date data_inizio;
+ Date data_fine;
+ Double massimale;
+ String selezione;
+ double premio;
+ int id_polizza;
+ String durata;
+ String pag;
+
+METODI
+
+Getters e Setters delle variabili
+
+getPremio(int id) e getMassimale(int id) -> ricercano nel DB i dati affiancanti a un determinato id_polizza
+
+API_4[] getPolizze(int idUser) -> ritorna un array di tutte le polizze che possiede un user
+
+int numPolizze(int idUser) -> ritorna il numero di polizze che possiede un user, utilizzato principamente per intanziare l'array del metodo precedente
+
+
+
+
+getId_polizza(int user, int macchinario) -> ricerca l'id della polizza affiancata ad un user e a un macchinario

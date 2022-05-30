@@ -1,0 +1,29 @@
+API 2 	Login su piattaforma YOLO
+
+DATI INPUT 
+
+ String nome;
+ String cognome;
+ String email;
+ String pass;
+ Date nascita;
+ String telefono;
+
+DATI OUTPUT
+
+ int Iduser;
+ Date inserimento;
+
+METODI
+
+Getter e Setter di ogni variabile
+
+boolean login(String email, String password, API_2 User) -> viene ricercato nel DB la combinazione tra mail e password, se trovata 
+										 istanzia l'oggetto User con i dati che riguardano quella combinazione
+
+int getIdU(API_2 user) -> ricerca dell'id dell'user 
+
+setUser(API_2 user) -> salvataggio nel DB di un nuovo user 
+
+setUser(String nome, String cognome, String email, String password, Date nascita, String telefono)
+	-> salvataggio di un nuovo User nel DB tramite la richiesta di tutti i dati

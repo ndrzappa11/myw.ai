@@ -1,0 +1,39 @@
+API 1 - selezione prodotto
+
+DATI INPUT
+
+ int IDMacchinario;
+ String matricola;
+ String tip;	//tipologia macchinario
+ double valore;
+ String ass_gar;	//assicurazione\garanzia\assicurazione+garanzia
+ String durata;
+
+DATI OUTPUT
+
+ int id_polizza[] = {-1, -1, -1};
+ double massimale[] = {-1, -1, -1};
+ double premio[] = {-1, -1, -1};
+
+non volendo creare una classe java di proposte vengono forniti solo degli array
+che fornisco informazioni riguardo le proposte che abbiamo
+Il dato piu' importante è l'id_polizza siccome univoco
+
+METODI
+
+Getters e Setters di ogni variabile 
+
+setMacchinario(API_1 macchinario) -> inseriti tutti i dati richiesti precedentemente, tranne l'id che viene
+						 auto generato da DB nel momento in cui viene caricato, viene inserito un nuovo macchinario nel DB
+
+getId(API_1 macchinario) -> ricerca l'id del macchinario tramite la matricola
+				    puo' essere modificato per una ricerca piu' accurata
+
+getId(String matricola) -> ricerca l'id del macchinario inserendo diretto la matricola invece che l'intero oggetto
+
+
+genera_offerta() -> metodo utilizzato per ricercare nella tabella proposte le offerte migliori inerenti a un determinato macchinario e richiesta di ass_gar
+					Bisogna prima instanziare un offetto per poterlo far funzionare
+					il metodo instanzia gli array delle proposte, bisogna quindi richiamare gli array successivamente
+
+					modificabile(si può inserire un oggetto almeno si ha la certezza che si ricerchi per quell'oggettto)
